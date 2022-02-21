@@ -56,20 +56,20 @@ makeTea().then((data)=>{
 
 
 // code start here
-async function getItem(){
-return new Promise((resolve,reject)=>{
-    console.log(10);
-});
-}
+// async function getItem(){
+// return new Promise((resolve,reject)=>{
+//     console.log(10);
+// });
+// }
 // console.log(getItem());
 // getItem().then((data)=>{
 //     console.log(data);
 // })
 
-async function display(){
-let item=await getItem();
-console.log(item);    
-}
-display();
+// async function display(){
+// let item=await getItem();
+// console.log(item);    
+// }
+// display();
 
 //code ends here
