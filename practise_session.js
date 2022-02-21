@@ -1,22 +1,22 @@
-// async function makeTea() {
-//   let container = ["chiyarang", "milk", "bhado"];
+async function makeTea() {
+  let container = ["chiyarang", "milk", "bhado"];
 
-//   return new Promise((resolve, reject) => {
-//     if (container.includes("water") && container.includes("bhado")) 
-//     {
-//         resolve('tea can be made');
-//     }
-//     else{
-//         reject('failed to make tea');
-//     }
-//   })
-// }
+  return new Promise((resolve, reject) => {
+    if (container.includes("water") && container.includes("bhado")) 
+    {
+        resolve('tea can be made');
+    }
+    else{
+        reject('failed to make tea');
+    }
+  })
+}
 
-// // makeTea().then((data)=>{
-// //     console.log(data);
-// // }).catch((error)=>{
-// //     console.log(error);
-// // })
+// makeTea().then((data)=>{
+//     console.log(data);
+// }).catch((error)=>{
+//     console.log(error);
+// })
 
 
 // async function result(){
@@ -52,6 +52,7 @@
 //code ends here
 
 
+// code start here
 async function getItem(){
 return new Promise((resolve,reject)=>{
     console.log(10);
@@ -67,3 +68,5 @@ let item=await getItem();
 console.log(item);    
 }
 display();
+
+//code ends here
