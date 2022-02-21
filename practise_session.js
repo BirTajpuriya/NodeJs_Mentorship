@@ -1,6 +1,7 @@
 async function makeTea() {
   let container = ["chiyarang", "milk", "bhado"];
 
+  //here we produce the promise
   return new Promise((resolve, reject) => {
     if (container.includes("water") && container.includes("bhado")) 
     {
@@ -12,11 +13,13 @@ async function makeTea() {
   })
 }
 
-// makeTea().then((data)=>{
-//     console.log(data);
-// }).catch((error)=>{
-//     console.log(error);
-// })
+
+// this is where the promise is consumed
+makeTea().then((data)=>{
+    console.log(data);
+}).catch((error)=>{
+    console.log(error);
+})
 
 
 // async function result(){
