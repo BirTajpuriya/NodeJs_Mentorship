@@ -1,0 +1,29 @@
+Basic:
+Variables
+Constants
+Primitive Types
+Dynamic Typing
+Arrays(including all the methods)
+Functions(focus on array functions)
+Types of Function
+Operators( Arithmetic, Assignment,Comparison,Equality,Logical)
+Loops
+Conditions(is else, whiles, switch cases)
+After this:
+Objects in Javascript
+Factory and Constructor functions
+(Don't overdo in classes in js)
+Accessing properties of objects
+Enumeration(just have the understanding)
+Cloning of an object
+ES6 and native way
+Template literals
+Dates along with methods
+Math,String,etc...
+Advance but most important topic:
+Destructuring
+Async Await(Asynchronous Javascript)
+Promise 
+Array methods(map, filter, reduce, and others too)
+
+app/src/main/

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      //code for clone
+      function createClone() {
+        var div = document.getElementById("div_id"),
+          clone = div.cloneNode(true); // true means clone all childNodes and all event handlers
+        clone.id = "some_id";
+        document.body.appendChild(clone);
+      }
+
+      // function to show data
+      function showData() {
+        var name = document.getElementById("name").value;
+        var address = document.getElementById("address").value;
+        if (name.match(/^[a-zA-Z]*$/) && address.match(/^[a-zA-Z]*$/)) {
+          localStorage.setItem("name", name);
+          localStorage.setItem("add", address);
+        } else {
+          alert("Please, input String value Only !");
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="div_id">
+      <form action="index.html" method="get" onsubmit="return(showData());">
+        <table>
+          <tr>
+            <td>
+              <label>Name</label>
+            </td>
+            <td>
+              <input type="text" id="name" name="name" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label>Address</label>
+            </td>
+            <td>
+              <input type="text" id="address" name="address" required />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="submit" value="submit" onclick="createClone()" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
