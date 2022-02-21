@@ -1,3 +1,7 @@
+// async and await is way to manage Promise.
+// mechanism to handle Promise
+//the function with async keyword is always returned Promise
+
 async function makeTea() {
   let container = ["chiyarang", "milk", "bhado"];
 
