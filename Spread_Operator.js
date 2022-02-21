@@ -2,7 +2,7 @@
 // for example : euta old naamak array xa ani arko newArray naamak array.
 // aba malai newArray ma old array ko ni items chahiyo ani sangai naya items ni
 //chahine huda, tyo bela Spread operator use garinxa
-//we 3 dots and arrayName to concatinate.
+//we use 3 dots and arrayName to concatinate.
 
 //let's watch example:
 let old_array = [
