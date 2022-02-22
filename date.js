@@ -40,3 +40,10 @@ console.log(Curr_Time.getMinutes());
 console.log(Curr_Time.getSeconds()); // this will show seconds
 console.log(Curr_Time.getMilliseconds());// this will show milliseconds
 
+
+
+// methods to setDate in function
+
+let newTime=new Date();
+newTime.setDate(2);
+console.log(newTime);
